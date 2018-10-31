@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-class ChatViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     private final let Side_Margin:CGFloat = 20.0
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeUI()
-        setUpCollectionView()
+        setUpTableView()
     }
     
     private func initializeUI() {
@@ -27,27 +27,27 @@ class ChatViewController: UIViewController, UICollectionViewDelegate, UICollecti
         sendButton.layer.cornerRadius = sendButton.bounds.width / 4
     }
     
-    private func setUpCollectionView() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
+    private func setUpTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: ChatCell?
         if indexPath.row % 2 == 0 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "chat_me", for: indexPath) as? ChatCell
-            cell?.bindData(ChatData(user: UIImage(named:"icon_userImage")!, text: "안녕하세요.", date:"1시간전"))
+            cell = tableView.dequeueReusableCell(withIdentifier: "chat_me", for: indexPath) as? ChatCell
+            cell?.bindData(ChatData(user: UIImage(named:"icon_userImage")!, name:"hello", text: "안녕하세요.", date:"1시간전"))
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "chat_other", for: indexPath) as? ChatCell
-            cell?.bindData(ChatData(user: UIImage(named:"icon_userImage")!, text: "안녕하세요.\n안녕하세요.\n안녕?", date:"방금"))
+            cell = tableView.dequeueReusableCell(withIdentifier: "chat_other", for: indexPath) as? ChatCell
+            cell?.bindData(ChatData(user: UIImage(named:"icon_userImage")!, name:"jinyoung", text: "안녕하세요.\n안녕하세요.\n안녕?", date:"방금"))
         }
-        
         return cell!
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 40
     }
+    
     @IBAction func onClickSend(_ sender: Any) {
     }
 }

@@ -6,9 +6,10 @@ target 'J.AskingApp' do
   use_frameworks!
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-  pod 'VegaScrollFlowLayout'
   pod 'FoldingTabBar', '~> 1.2.1'
   pod 'SideMenu'
+  pod 'Alamofire', '~> 4.7'
+  pod 'MessageKit'
   # Pods for J.AskingApp
 
   target 'J.AskingAppTests' do

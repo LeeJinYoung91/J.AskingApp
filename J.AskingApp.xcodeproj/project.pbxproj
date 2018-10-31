@@ -18,11 +18,11 @@
 		101FF74B2186EB60006ECD7B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF74A2186EB60006ECD7B /* Util.swift */; };
 		101FF76621870332006ECD7B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF76521870332006ECD7B /* TabViewController.swift */; };
 		1063316821892C59000DF548 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316721892C59000DF548 /* ChatListCell.swift */; };
+		1063316A21893658000DF548 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316921893658000DF548 /* ChatCell.swift */; };
 		1066CC4D21884C0400782D1C /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066CC4C21884C0400782D1C /* ChatData.swift */; };
 		1066CC4F21884D8900782D1C /* ChatResizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066CC4E21884D8900782D1C /* ChatResizingCell.swift */; };
 		10DA25562187DFAB0066839F /* NavigationItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25552187DFAB0066839F /* NavigationItemExtension.swift */; };
 		10DA25592187ED9E0066839F /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25582187ED9E0066839F /* ChatListViewController.swift */; };
-		10DA255D2187EE650066839F /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA255C2187EE650066839F /* ChatCell.swift */; };
 		10DA255F2187F1B20066839F /* TabbarSideViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA255E2187F1B20066839F /* TabbarSideViewControllerExtension.swift */; };
 		10DA25612187F6B90066839F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25602187F6B90066839F /* SideMenuViewController.swift */; };
 		10DA2A6D21883C3E0066839F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA2A6C21883C3E0066839F /* ChatViewController.swift */; };
@@ -66,11 +66,11 @@
 		101FF74A2186EB60006ECD7B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		101FF76521870332006ECD7B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		1063316721892C59000DF548 /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		1063316921893658000DF548 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		1066CC4C21884C0400782D1C /* ChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatData.swift; sourceTree = "<group>"; };
 		1066CC4E21884D8900782D1C /* ChatResizingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResizingCell.swift; sourceTree = "<group>"; };
 		10DA25552187DFAB0066839F /* NavigationItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemExtension.swift; sourceTree = "<group>"; };
 		10DA25582187ED9E0066839F /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
-		10DA255C2187EE650066839F /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		10DA255E2187F1B20066839F /* TabbarSideViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarSideViewControllerExtension.swift; sourceTree = "<group>"; };
 		10DA25602187F6B90066839F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		10DA2A6C21883C3E0066839F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -236,10 +236,10 @@
 		10DA255B2187EE540066839F /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				10DA255C2187EE650066839F /* ChatCell.swift */,
 				1066CC4C21884C0400782D1C /* ChatData.swift */,
 				1066CC4E21884D8900782D1C /* ChatResizingCell.swift */,
 				1063316721892C59000DF548 /* ChatListCell.swift */,
+				1063316921893658000DF548 /* ChatCell.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -396,12 +396,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-J.AskingApp/Pods-J.AskingApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FoldingTabBar/FoldingTabBar.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -412,12 +413,13 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingTabBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -499,10 +501,10 @@
 				1063316821892C59000DF548 /* ChatListCell.swift in Sources */,
 				1066CC4F21884D8900782D1C /* ChatResizingCell.swift in Sources */,
 				101FF74B2186EB60006ECD7B /* Util.swift in Sources */,
-				10DA255D2187EE650066839F /* ChatCell.swift in Sources */,
 				10DA25592187ED9E0066839F /* ChatListViewController.swift in Sources */,
 				101FF73E21869433006ECD7B /* InputViewController.swift in Sources */,
 				10DA25612187F6B90066839F /* SideMenuViewController.swift in Sources */,
+				1063316A21893658000DF548 /* ChatCell.swift in Sources */,
 				10DA2A6D21883C3E0066839F /* ChatViewController.swift in Sources */,
 				10DA255F2187F1B20066839F /* TabbarSideViewControllerExtension.swift in Sources */,
 			);
