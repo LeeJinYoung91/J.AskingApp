@@ -22,3 +22,29 @@ struct ChatData {
         regitDate = date
     }
 }
+
+struct ChannelData {
+    var channelName:String?
+    var updateDate:String?
+    var channelId:String?
+    
+    init(name:String?, update:String?, id:String?) {
+        channelName = name
+        updateDate = update
+        channelId = id
+    }
+}
+
+struct MessagingData {
+    let senderName:String?
+    let senderId:String?
+    let regitDate:String?
+    var content:String?
+    
+    init(text:String?) {
+        senderName = AccountManager.instance.userName
+        senderId = AccountManager.instance.userId
+        content = text
+        regitDate = "지금"
+    }
+}

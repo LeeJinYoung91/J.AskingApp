@@ -30,7 +30,6 @@ extension UIViewController: YALTabBarDelegate {
 extension UIViewController: UISideMenuNavigationControllerDelegate {
     
     public func sideMenuWillAppear(menu: UISideMenuNavigationController, animated: Bool) {
-        
     }
     
     public func sideMenuWillDisappear(menu: UISideMenuNavigationController, animated: Bool) {

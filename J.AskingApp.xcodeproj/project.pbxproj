@@ -17,12 +17,13 @@
 		101FF741218696C4006ECD7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 101FF740218696C4006ECD7B /* GoogleService-Info.plist */; };
 		101FF74B2186EB60006ECD7B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF74A2186EB60006ECD7B /* Util.swift */; };
 		101FF76621870332006ECD7B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF76521870332006ECD7B /* TabViewController.swift */; };
-		1063316821892C59000DF548 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316721892C59000DF548 /* ChatListCell.swift */; };
+		1063316821892C59000DF548 /* ChatChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316721892C59000DF548 /* ChatChannelListCell.swift */; };
 		1063316A21893658000DF548 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316921893658000DF548 /* ChatCell.swift */; };
+		1063316D2189424F000DF548 /* ChatUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316C2189424F000DF548 /* ChatUtil.swift */; };
+		10633170218942C6000DF548 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316F218942C6000DF548 /* AccountManager.swift */; };
 		1066CC4D21884C0400782D1C /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066CC4C21884C0400782D1C /* ChatData.swift */; };
-		1066CC4F21884D8900782D1C /* ChatResizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066CC4E21884D8900782D1C /* ChatResizingCell.swift */; };
 		10DA25562187DFAB0066839F /* NavigationItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25552187DFAB0066839F /* NavigationItemExtension.swift */; };
-		10DA25592187ED9E0066839F /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25582187ED9E0066839F /* ChatListViewController.swift */; };
+		10DA25592187ED9E0066839F /* ChatChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25582187ED9E0066839F /* ChatChannelListViewController.swift */; };
 		10DA255F2187F1B20066839F /* TabbarSideViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA255E2187F1B20066839F /* TabbarSideViewControllerExtension.swift */; };
 		10DA25612187F6B90066839F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA25602187F6B90066839F /* SideMenuViewController.swift */; };
 		10DA2A6D21883C3E0066839F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA2A6C21883C3E0066839F /* ChatViewController.swift */; };
@@ -65,12 +66,13 @@
 		101FF740218696C4006ECD7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		101FF74A2186EB60006ECD7B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		101FF76521870332006ECD7B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		1063316721892C59000DF548 /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		1063316721892C59000DF548 /* ChatChannelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChannelListCell.swift; sourceTree = "<group>"; };
 		1063316921893658000DF548 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		1063316C2189424F000DF548 /* ChatUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUtil.swift; sourceTree = "<group>"; };
+		1063316F218942C6000DF548 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		1066CC4C21884C0400782D1C /* ChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatData.swift; sourceTree = "<group>"; };
-		1066CC4E21884D8900782D1C /* ChatResizingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResizingCell.swift; sourceTree = "<group>"; };
 		10DA25552187DFAB0066839F /* NavigationItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemExtension.swift; sourceTree = "<group>"; };
-		10DA25582187ED9E0066839F /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		10DA25582187ED9E0066839F /* ChatChannelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChannelListViewController.swift; sourceTree = "<group>"; };
 		10DA255E2187F1B20066839F /* TabbarSideViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarSideViewControllerExtension.swift; sourceTree = "<group>"; };
 		10DA25602187F6B90066839F /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		10DA2A6C21883C3E0066839F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		101FF702218691F3006ECD7B = {
 			isa = PBXGroup;
 			children = (
+				1063316E218942AB000DF548 /* J.Account */,
 				101FF7492186EB51006ECD7B /* J.Utility */,
 				101FF74221869A9B006ECD7B /* J.Controller */,
 				101FF73F218694E6006ECD7B /* J.MessagingChat */,
@@ -191,8 +194,9 @@
 		101FF73F218694E6006ECD7B /* J.MessagingChat */ = {
 			isa = PBXGroup;
 			children = (
+				1063316B218941F2000DF548 /* ChatUtility */,
 				10DA255B2187EE540066839F /* Chat */,
-				10DA25582187ED9E0066839F /* ChatListViewController.swift */,
+				10DA25582187ED9E0066839F /* ChatChannelListViewController.swift */,
 				10DA2A6C21883C3E0066839F /* ChatViewController.swift */,
 			);
 			path = J.MessagingChat;
@@ -233,12 +237,27 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		1063316B218941F2000DF548 /* ChatUtility */ = {
+			isa = PBXGroup;
+			children = (
+				1063316C2189424F000DF548 /* ChatUtil.swift */,
+			);
+			path = ChatUtility;
+			sourceTree = "<group>";
+		};
+		1063316E218942AB000DF548 /* J.Account */ = {
+			isa = PBXGroup;
+			children = (
+				1063316F218942C6000DF548 /* AccountManager.swift */,
+			);
+			path = J.Account;
+			sourceTree = "<group>";
+		};
 		10DA255B2187EE540066839F /* Chat */ = {
 			isa = PBXGroup;
 			children = (
 				1066CC4C21884C0400782D1C /* ChatData.swift */,
-				1066CC4E21884D8900782D1C /* ChatResizingCell.swift */,
-				1063316721892C59000DF548 /* ChatListCell.swift */,
+				1063316721892C59000DF548 /* ChatChannelListCell.swift */,
 				1063316921893658000DF548 /* ChatCell.swift */,
 			);
 			path = Chat;
@@ -495,13 +514,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				101FF76621870332006ECD7B /* TabViewController.swift in Sources */,
+				1063316D2189424F000DF548 /* ChatUtil.swift in Sources */,
 				10DA25562187DFAB0066839F /* NavigationItemExtension.swift in Sources */,
 				1066CC4D21884C0400782D1C /* ChatData.swift in Sources */,
 				101FF70F218691F3006ECD7B /* AppDelegate.swift in Sources */,
-				1063316821892C59000DF548 /* ChatListCell.swift in Sources */,
-				1066CC4F21884D8900782D1C /* ChatResizingCell.swift in Sources */,
+				10633170218942C6000DF548 /* AccountManager.swift in Sources */,
+				1063316821892C59000DF548 /* ChatChannelListCell.swift in Sources */,
 				101FF74B2186EB60006ECD7B /* Util.swift in Sources */,
-				10DA25592187ED9E0066839F /* ChatListViewController.swift in Sources */,
+				10DA25592187ED9E0066839F /* ChatChannelListViewController.swift in Sources */,
 				101FF73E21869433006ECD7B /* InputViewController.swift in Sources */,
 				10DA25612187F6B90066839F /* SideMenuViewController.swift in Sources */,
 				1063316A21893658000DF548 /* ChatCell.swift in Sources */,

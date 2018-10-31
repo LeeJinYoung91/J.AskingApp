@@ -62,16 +62,16 @@
             </objects>
             <point key="canvasLocation" x="-4022" y="-356"/>
         </scene>
-        <!--Chat List-->
+        <!--Channel List-->
         <scene sceneID="pHd-4C-bCs">
             <objects>
-                <tableViewController id="ide-1N-rL5" customClass="ChatListViewController" customModule="J_AskingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ide-1N-rL5" customClass="ChatChannelListViewController" customModule="J_AskingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4x9-gj-Bty">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="chatListCell" rowHeight="77" id="FVf-DM-8ZT" customClass="ChatListCell" customModule="J_AskingApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="chatListCell" rowHeight="77" id="FVf-DM-8ZT" customClass="ChatChannelListCell" customModule="J_AskingApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FVf-DM-8ZT" id="Yzi-Hn-eQN">
@@ -81,7 +81,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNj-TL-wuH">
                                             <rect key="frame" x="12" y="3" width="351" height="71"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_userImage" translatesAutoresizingMaskIntoConstraints="NO" id="qSL-UE-j7s">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_channel" translatesAutoresizingMaskIntoConstraints="NO" id="qSL-UE-j7s">
                                                     <rect key="frame" x="12" y="15.5" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="ZMk-ej-Z8g"/>
@@ -123,10 +123,9 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="backView" destination="GNj-TL-wuH" id="FTI-b4-EIA"/>
-                                    <outlet property="chatText" destination="zK3-hV-Jgb" id="16R-6g-4b0"/>
-                                    <outlet property="regitDate" destination="mUg-OV-9F3" id="2cC-Pv-dnU"/>
-                                    <outlet property="userImage" destination="qSL-UE-j7s" id="lgi-uB-5UW"/>
-                                    <segue destination="xco-kV-d0L" kind="show" id="05T-er-uaI"/>
+                                    <outlet property="channelName" destination="zK3-hV-Jgb" id="feh-IT-2eJ"/>
+                                    <outlet property="updateDate" destination="mUg-OV-9F3" id="B68-L3-4VR"/>
+                                    <segue destination="xco-kV-d0L" kind="show" identifier="enterChannel" id="05T-er-uaI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -135,7 +134,13 @@
                             <outlet property="delegate" destination="ide-1N-rL5" id="djS-hz-ULa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chat List" id="cgC-iD-RaD"/>
+                    <navigationItem key="navigationItem" title="Channel List" id="cgC-iD-RaD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icon_plus" id="Izv-GA-7f8">
+                            <connections>
+                                <action selector="openAddChannelListAlert:" destination="ide-1N-rL5" id="aab-hZ-R9B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGc-DX-jMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -497,6 +502,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_channel" width="40" height="40"/>
+        <image name="icon_plus" width="21" height="21"/>
         <image name="icon_userImage" width="40" height="40"/>
     </resources>
 </document>

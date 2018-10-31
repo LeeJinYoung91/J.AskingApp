@@ -15,11 +15,21 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    private var channelData:ChannelData?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeUI()
         setUpTableView()
+        setNavigationItem()
+    }
+    
+    func setChannelData(_ data:ChannelData) {
+        channelData = data
+    }
+    
+    private func setNavigationItem() {
+        navigationItem.title = channelData?.channelName
     }
     
     private func initializeUI() {
@@ -49,5 +59,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func onClickSend(_ sender: Any) {
+        ChatUtil.instance.sendMessage(channelId: (channelData?.channelId)!, message: MessagingData(text: textField.text))
     }
 }
