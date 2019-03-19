@@ -44,5 +44,6 @@ class TabViewController: YALFoldingTabBarController {
     
     private func setUpSideMenu() {
         SideMenuManager.defaultManager.menuRightNavigationController = storyboard?.instantiateViewController(withIdentifier: "chatNAV") as? UISideMenuNavigationController
+        SideMenuManager.defaultManager.menuLeftNavigationController = storyboard?.instantiateViewController(withIdentifier: "sideMenuNav") as? UISideMenuNavigationController
     }
 }

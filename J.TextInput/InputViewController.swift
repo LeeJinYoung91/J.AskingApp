@@ -40,6 +40,6 @@ class InputViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     }
     
     @objc func onClickList() {
-        
+        onClickMenuList()
     }
 }

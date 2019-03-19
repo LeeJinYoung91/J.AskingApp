@@ -14,6 +14,9 @@ class ChatChannelListCell: UITableViewCell {
     @IBOutlet weak var updateDate:UILabel!
     @IBOutlet weak var backView: UIView!
     private var chData:ChannelData?
+    private weak var viewController:UIViewController?
+    private var longTapGestureRecognizer:UILongPressGestureRecognizer?
+    
     var ChannelData:ChannelData {
         return chData!
     }
@@ -21,11 +24,33 @@ class ChatChannelListCell: UITableViewCell {
     override func awakeFromNib() {
         backView.layer.cornerRadius = 7
         backView.layer.masksToBounds = true
+        longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(onLongTap))
     }
     
-    func bindData(_ data:ChannelData) {
+    func bindData(_ data:ChannelData, parent:UIViewController) {
         chData = data
         channelName.text = data.channelName
         updateDate.text = data.updateDate
+        viewController = parent
+        guard let recognizer = longTapGestureRecognizer else {
+            return
+        }
+        removeGestureRecognizer(recognizer)
+        addGestureRecognizer(recognizer)
+        
+    }
+    
+    @objc private func onLongTap() {
+        let alertVC = UIAlertController(title: "channel", message: "option", preferredStyle: .actionSheet)
+        let ignoreAction = UIAlertAction(title: "ignore", style: .default) { [weak self] (action) in
+            if let channelId = self?.chData?.channelId {
+                AccountManager.instance.UserProfile.addIgnoreChannelList(channelId)
+            }
+        }
+        let cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
+        
+        alertVC.addAction(ignoreAction)
+        alertVC.addAction(cancelAction)
+        viewController?.present(alertVC, animated: true, completion: nil)
     }
 }

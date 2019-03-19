@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in AccountManager.tryLoginInFirebaseAuth(email:password:listener:):AccountManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "authResult?.user.displayNickname">
+            </PersistentString>
+            <PersistentString
+               value = "authResult?.additionalUserInfo?.userName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ChatUtil.addChatObserver(listener:):ChatUtil.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "doc.data()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

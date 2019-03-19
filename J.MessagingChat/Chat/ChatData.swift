@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 struct ChatData {
-    var userImage:UIImage?
+    var userId:String?
     var userName:String?
     var chat:String?
     var regitDate:String?
     
-    init(user:UIImage, name:String?, text:String, date:String?) {
-        userImage = user
+    init(id:String?, name:String?, text:String?, date:String?) {
+        userId = id
         userName = name
         chat = text
         regitDate = date
@@ -42,8 +42,8 @@ struct MessagingData {
     var content:String?
     
     init(text:String?) {
-        senderName = AccountManager.instance.userName
-        senderId = AccountManager.instance.userId
+        senderName = AccountManager.instance.UserProfile.UserName
+        senderId = AccountManager.instance.UserProfile.UserId        
         content = text
         regitDate = "지금"
     }

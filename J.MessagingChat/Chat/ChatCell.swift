@@ -14,6 +14,8 @@ class ChatCell: UITableViewCell {
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var chatText:UILabel!
     @IBOutlet weak var bubblePod: UIView!
+    @IBOutlet weak var bubbleImageView:UIImageView!
+    private var userId:String?
     
     override func awakeFromNib() {
         chatText.numberOfLines = 0
@@ -22,9 +24,10 @@ class ChatCell: UITableViewCell {
     }
     
     func bindData(_ data:ChatData) {
-        userImage.image = data.userImage
+        userId = data.userId
+        userImage.image = UIImage(named:"icon_userImage")
         userName.text = data.userName
         chatText.text = data.chat
-        chatText.sizeToFit()
+        layoutIfNeeded()
     }
 }

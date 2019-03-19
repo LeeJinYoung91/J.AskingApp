@@ -6,10 +6,13 @@ target 'J.AskingApp' do
   use_frameworks!
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'FBSDKLoginKit'
   pod 'FoldingTabBar', '~> 1.2.1'
   pod 'SideMenu'
   pod 'Alamofire', '~> 4.7'
   pod 'MessageKit'
+  pod 'Pageboy', '~> 2.6'
   # Pods for J.AskingApp
 
   target 'J.AskingAppTests' do

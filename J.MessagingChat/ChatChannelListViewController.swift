@@ -8,18 +8,29 @@
 
 import Foundation
 import UIKit
+import SideMenu
 
 class ChatChannelListViewController: UITableViewController {
-    var channelList:[(String, String, String)] = [(String, String, String)]()
+    private var channelList:[(String, String, String)] = [(String, String, String)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getChannelList()
+        addListenerOnBarItems()
+    }
+    
+    private func addListenerOnBarItems() {
+        navigationItem.leftBarButtonItem?.target = self
+        navigationItem.leftBarButtonItem?.action = #selector(onBackClick)
+    }
+    
+    @objc private func onBackClick() {
+        dismiss(animated: true, completion: nil)
     }
     
     func getChannelList() {
         reloadChannelList()
-        ChatUtil.instance.getChannelList { [weak self] (list) in
+        ChatUtil().getChannelList { [weak self] (list) in
             self?.channelList = list
             self?.tableView.reloadData()
         }
@@ -32,7 +43,7 @@ class ChatChannelListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ChatChannelListCell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath) as! ChatChannelListCell
-        cell.bindData(ChannelData(name: channelList[indexPath.row].0, update: channelList[indexPath.row].1, id:channelList[indexPath.row].2))
+        cell.bindData(ChannelData(name: channelList[indexPath.row].0, update: channelList[indexPath.row].1, id:channelList[indexPath.row].2), parent: self)
         return cell
     }
     
@@ -57,7 +68,7 @@ class ChatChannelListViewController: UITableViewController {
         alertController.addAction(UIAlertAction(title: "Create", style: .default, handler: { (ok) in
             if let field = alertController.textFields?.first {
                 if let inputText = field.text {
-                    ChatUtil.instance.createNewChannel(channelName: inputText)
+                    ChatUtil().createNewChannel(channelName: inputText)
                 }
             }
         }))
