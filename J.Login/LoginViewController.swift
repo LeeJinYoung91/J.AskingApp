@@ -13,12 +13,12 @@ import FBSDKLoginKit
 import FirebaseAuth
 import AudioToolbox
 
-class LoginViewController: UIViewController, FBSDKLoginButtonDelegate  {
+class LoginViewController: UIViewController, LoginButtonDelegate  {
     @IBOutlet weak var loginEmailTextField: UITextField!
     @IBOutlet weak var loginPasswordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
-    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
+    @IBOutlet weak var facebookLoginButton: FBLoginButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeLoginButtons()
@@ -28,7 +28,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate  {
     private func initializeLoginButtons() {
         loginButton.layer.cornerRadius = 5
         loginButton.layer.masksToBounds = true
-        facebookLoginButton.readPermissions = ["public_profile", "email"]
+        facebookLoginButton.permissions = ["public_profile", "email"]
         facebookLoginButton.delegate = self
     }
     
@@ -42,11 +42,11 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate  {
         }
     }
     
-    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         guard error == nil else {
             return
         }
-        guard let token = FBSDKAccessToken.current()?.tokenString else {
+        guard let token = AccessToken.current?.tokenString else {
             return
         }
         AccountManager.instance.tryLoginInFirebaseAuth(FacebookAuthProvider.credential(withAccessToken: token)) { (success) in
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate  {
         }
     }
     
-    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         AccountManager().processOnLogout(listener: {_ in })
     }
     

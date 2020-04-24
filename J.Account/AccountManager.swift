@@ -27,7 +27,7 @@ class AccountManager: NSObject {
     }
     
     func checkFacebookLoginInfo(listener:@escaping (_ has:Bool)-> ()){
-        if let token = FBSDKAccessToken.current()?.tokenString {
+        if let token = AccessToken.current?.tokenString {
             tryLoginInFirebaseAuth(FacebookAuthProvider.credential(withAccessToken: token), listener: listener)
             return
         }
@@ -38,7 +38,7 @@ class AccountManager: NSObject {
     func tryLoginInFirebaseAuth(_ creditional: AuthCredential, listener:@escaping (_ has:Bool)-> ()) {
         Auth.auth().signInAndRetrieveData(with: creditional) { (authResult, error) in
             guard error == nil else {
-                FBSDKLoginManager.init().logOut()
+                LoginManager.init().logOut()
                 listener(false)
                 return
             }
@@ -80,7 +80,7 @@ class AccountManager: NSObject {
     }
     
     func processOnLogout(listener:@escaping(_ success:Bool)->()) {
-        FBSDKLoginManager.init().logOut()
+        LoginManager.init().logOut()
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()

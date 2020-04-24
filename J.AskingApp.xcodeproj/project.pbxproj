@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,7 +25,6 @@
 		101FF724218691F5006ECD7B /* J_AskingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF723218691F5006ECD7B /* J_AskingAppTests.swift */; };
 		101FF72F218691F5006ECD7B /* J_AskingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF72E218691F5006ECD7B /* J_AskingAppUITests.swift */; };
 		101FF73E21869433006ECD7B /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF73D21869433006ECD7B /* InputViewController.swift */; };
-		101FF741218696C4006ECD7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 101FF740218696C4006ECD7B /* GoogleService-Info.plist */; };
 		101FF74B2186EB60006ECD7B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF74A2186EB60006ECD7B /* Util.swift */; };
 		101FF76621870332006ECD7B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101FF76521870332006ECD7B /* TabViewController.swift */; };
 		1063316821892C59000DF548 /* ChatChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316721892C59000DF548 /* ChatChannelListCell.swift */; };
@@ -33,6 +32,7 @@
 		1063316D2189424F000DF548 /* ChatUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316C2189424F000DF548 /* ChatUtil.swift */; };
 		10633170218942C6000DF548 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1063316F218942C6000DF548 /* AccountManager.swift */; };
 		1066CC4D21884C0400782D1C /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1066CC4C21884C0400782D1C /* ChatData.swift */; };
+		1069F82323795ABE0071DB58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1069F82223795ABE0071DB58 /* GoogleService-Info.plist */; };
 		10C535D9219421C800AC3A6D /* MainLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C535D8219421C800AC3A6D /* MainLoadingViewController.swift */; };
 		10C535DC2194272D00AC3A6D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C535DB2194272D00AC3A6D /* MenuTableViewController.swift */; };
 		10C535DF219427A800AC3A6D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C535DE219427A800AC3A6D /* MenuCell.swift */; };
@@ -43,7 +43,6 @@
 		10DA255F2187F1B20066839F /* UIViewControllExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA255E2187F1B20066839F /* UIViewControllExtension.swift */; };
 		10DA2A6D21883C3E0066839F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA2A6C21883C3E0066839F /* ChatViewController.swift */; };
 		256814C8645F4D4CD7349073 /* Pods_J_AskingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F71924977862CF24103FEE0 /* Pods_J_AskingAppTests.framework */; };
-		DFFD27523680414CDC2B0B58 /* Pods_J_AskingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68307EBA677C1EF6AEA8F97 /* Pods_J_AskingApp.framework */; };
 		FA532CCE7FAB4568B8C853B8 /* Pods_J_AskingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15CBB90488E8CCAEF39B03B /* Pods_J_AskingAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,7 +88,6 @@
 		101FF72E218691F5006ECD7B /* J_AskingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = J_AskingAppUITests.swift; sourceTree = "<group>"; };
 		101FF730218691F5006ECD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101FF73D21869433006ECD7B /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
-		101FF740218696C4006ECD7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		101FF74A2186EB60006ECD7B /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		101FF76521870332006ECD7B /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		1063316721892C59000DF548 /* ChatChannelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChannelListCell.swift; sourceTree = "<group>"; };
@@ -97,6 +95,8 @@
 		1063316C2189424F000DF548 /* ChatUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUtil.swift; sourceTree = "<group>"; };
 		1063316F218942C6000DF548 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		1066CC4C21884C0400782D1C /* ChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatData.swift; sourceTree = "<group>"; };
+		1069F82223795ABE0071DB58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10B4C11C237A39D3007B8581 /* J.AskingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = J.AskingApp.entitlements; sourceTree = "<group>"; };
 		10C535D8219421C800AC3A6D /* MainLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoadingViewController.swift; sourceTree = "<group>"; };
 		10C535DB2194272D00AC3A6D /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		10C535DE219427A800AC3A6D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
@@ -122,7 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFFD27523680414CDC2B0B58 /* Pods_J_AskingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,12 +210,13 @@
 		101FF70D218691F3006ECD7B /* J.AskingApp */ = {
 			isa = PBXGroup;
 			children = (
+				10B4C11C237A39D3007B8581 /* J.AskingApp.entitlements */,
 				101FF70E218691F3006ECD7B /* AppDelegate.swift */,
 				101FF712218691F3006ECD7B /* Main.storyboard */,
 				101FF715218691F4006ECD7B /* Assets.xcassets */,
 				101FF717218691F4006ECD7B /* LaunchScreen.storyboard */,
 				101FF71A218691F4006ECD7B /* Info.plist */,
-				101FF740218696C4006ECD7B /* GoogleService-Info.plist */,
+				1069F82223795ABE0071DB58 /* GoogleService-Info.plist */,
 			);
 			path = J.AskingApp;
 			sourceTree = "<group>";
@@ -470,8 +470,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				101FF719218691F4006ECD7B /* LaunchScreen.storyboard in Resources */,
-				101FF741218696C4006ECD7B /* GoogleService-Info.plist in Resources */,
 				101FF716218691F4006ECD7B /* Assets.xcassets in Resources */,
+				1069F82323795ABE0071DB58 /* GoogleService-Info.plist in Resources */,
 				100A6506219561D000175699 /* RegisterValidateTextField.xib in Resources */,
 				101FF714218691F3006ECD7B /* Main.storyboard in Resources */,
 			);
@@ -499,55 +499,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-J.AskingApp/Pods-J.AskingApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FoldingTabBar/FoldingTabBar.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
-				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.AskingApp/Pods-J.AskingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingTabBar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-J.AskingApp/Pods-J.AskingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-J.AskingApp/Pods-J.AskingApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-J.AskingApp/Pods-J.AskingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1A9A6D885A67FA1DEE12DA88 /* [CP] Check Pods Manifest.lock */ = {
@@ -814,8 +775,42 @@
 			baseConfigurationReference = 67E78774F081B75881805E03 /* Pods-J.AskingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = J.AskingApp/J.AskingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCEZ5R8HKX;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDynamicLinks/FirebaseDynamicLinks.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FoldingTabBar/FoldingTabBar.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MessageKit/MessageKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Pageboy/Pageboy.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SideMenu/SideMenu.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+				);
 				INFOPLIST_FILE = J.AskingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -834,8 +829,42 @@
 			baseConfigurationReference = 77433BB816EAACBB8D966689 /* Pods-J.AskingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = J.AskingApp/J.AskingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCEZ5R8HKX;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDynamicLinks/FirebaseDynamicLinks.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FoldingTabBar/FoldingTabBar.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MessageKit/MessageKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Pageboy/Pageboy.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SideMenu/SideMenu.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+				);
 				INFOPLIST_FILE = J.AskingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

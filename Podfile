@@ -7,6 +7,7 @@ target 'J.AskingApp' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'Firebase/DynamicLinks'
   pod 'FBSDKLoginKit'
   pod 'FoldingTabBar', '~> 1.2.1'
   pod 'SideMenu'

@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 
@@ -44,8 +43,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return (FBSDKApplicationDelegate.sharedInstance()?.application(app, open: url, options: options))!
+    func application(_ application: UIApplication, didUpdate userActivity: NSUserActivity) {
+        if let url = userActivity.webpageURL {
+            DynamicLinks.dynamicLinks().handleUniversalLink(url) { (link, error) in
+                print(link?.url)                
+            }
+        }
     }
 }
 
